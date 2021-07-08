@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1083,701" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="828,701" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="36">
       <x:String>System.Activities</x:String>
@@ -40,7 +40,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -95,11 +95,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">50,117</av:Point>
-          <av:Size x:Key="ShapeSize">200,66</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">150,183 150,213 120,213 120,247</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,68</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">150,185 150,215 120,215 120,247</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Inicio de Sesion" sap:VirtualizedContainerService.HintSize="650,1971" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence DisplayName="Inicio de Sesion" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_5">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="usuario" />
           <Variable x:TypeArguments="x:String" Name="password" />
@@ -110,13 +110,13 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="608,1879" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://sigestqa.tessi.co:8002/login">
+        <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="608,1968" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://sigestqa.tessi.co:8002/login">
           <ui:OpenBrowser.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="574,1778" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="574,1866" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Boolean" Name="variableBorrar" />
                 </Sequence.Variables>
@@ -154,9 +154,9 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:MultipleAssign>
-                <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  email'" sap:VirtualizedContainerService.HintSize="532,51" sap2010:WorkflowViewState.IdRef="SetValue_1" Text="[usuario]">
+                <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  email'" sap:VirtualizedContainerService.HintSize="532,134" sap2010:WorkflowViewState.IdRef="SetValue_1" Text="[usuario]">
                   <ui:SetValue.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d2b30f10-6ec1-4d00-af4f-cf66d934023c" InformativeScreenshot="5d01711ae3720b16ed773b5a4b71c29f" Selector="&lt;html app='firefox.exe' title='SIGEST' /&gt;&lt;webctrl tag='INPUT' type='email' /&gt;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d2b30f10-6ec1-4d00-af4f-cf66d934023c" InformativeScreenshot="874818cdc121647b36cef7056720889d" Selector="&lt;webctrl tag='INPUT' type='email' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
@@ -167,12 +167,12 @@
                   </ui:SetValue.Target>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:SetValue>
-                <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  password'" sap:VirtualizedContainerService.HintSize="532,51" sap2010:WorkflowViewState.IdRef="SetValue_2" Text="[password]">
+                <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  password'" sap:VirtualizedContainerService.HintSize="532,52" sap2010:WorkflowViewState.IdRef="SetValue_2" Text="[password]">
                   <ui:SetValue.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c01bbba-a28e-4444-ac94-5779f5882b34" InformativeScreenshot="2598b398909dc10184f9a33bf964d848" Selector="&lt;html app='firefox.exe' title='SIGEST' /&gt;&lt;webctrl tag='INPUT' type='password' /&gt;">
                       <ui:Target.TimeoutMS>
@@ -226,9 +226,9 @@
                     <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                   </Assign.Value>
                 </Assign>
-                <If Condition="[variableBorrar]" sap:VirtualizedContainerService.HintSize="532,1089" sap2010:WorkflowViewState.IdRef="If_1">
+                <If Condition="[variableBorrar]" sap:VirtualizedContainerService.HintSize="532,1093" sap2010:WorkflowViewState.IdRef="If_1">
                   <If.Then>
-                    <Sequence sap:VirtualizedContainerService.HintSize="496,913" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence sap:VirtualizedContainerService.HintSize="496,914" sap2010:WorkflowViewState.IdRef="Sequence_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -236,14 +236,14 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <Delay Duration="00:00:59" sap:VirtualizedContainerService.HintSize="454,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                      <Sequence sap:VirtualizedContainerService.HintSize="454,759" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                      <Sequence sap:VirtualizedContainerService.HintSize="454,760" sap2010:WorkflowViewState.IdRef="Sequence_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:GetOutlookMailMessages Account="{x:Null}" Filter="{x:Null}" FilterByMessageIds="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Outlook Mail Messages" GetAttachements="False" sap:VirtualizedContainerService.HintSize="412,22" sap2010:WorkflowViewState.IdRef="GetOutlookMailMessages_1" MailFolder="Bandeja de entrada" MarkAsRead="False" Messages="[codigoVerificacion]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Top="1" />
-                        <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="412,605" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[codigoVerificacion]">
+                        <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="412,606" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[codigoVerificacion]">
                           <ui:ForEach.Body>
                             <ActivityAction x:TypeArguments="snm:MailMessage">
                               <ActivityAction.Argument>
@@ -324,11 +324,11 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">20,247</av:Point>
-              <av:Size x:Key="ShapeSize">200,66</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">120,313 120,337 130,337</av:PointCollection>
+              <av:Size x:Key="ShapeSize">200,68</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">120,315 120,337 130,337</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Sequence Lectura Excel" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Sequence DisplayName="Sequence Lectura Excel" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <Sequence.Variables>
               <Variable x:TypeArguments="s:DateTime" Name="fecha" />
               <Variable x:TypeArguments="x:String" Name="dia" />
@@ -416,19 +416,20 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">30,337</av:Point>
-                  <av:Size x:Key="ShapeSize">200,66</av:Size>
+                  <av:Size x:Key="ShapeSize">200,68</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Sequence Inserccion Comparendo" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence DisplayName="Sequence Inserccion Comparendo" sap:VirtualizedContainerService.HintSize="2001,8834" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="cliente" />
+                  <Variable x:TypeArguments="x:String" Name="rutaImagen" />
                 </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign sap:VirtualizedContainerService.HintSize="1496,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                <Assign sap:VirtualizedContainerService.HintSize="1959,60" sap2010:WorkflowViewState.IdRef="Assign_3">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[cliente]</OutArgument>
                   </Assign.To>
@@ -436,13 +437,21 @@
                     <InArgument x:TypeArguments="x:String">BANCOLOMBIA</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtcomparendos]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1496,8070" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <Assign sap:VirtualizedContainerService.HintSize="1959,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[rutaImagen]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">C:\Users\jparra\OneDrive\RPA\COMPARENDOS\CAPTURAS\</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtcomparendos]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1959,8542" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                   <ui:ForEachRow.Body>
                     <ActivityAction x:TypeArguments="sd:DataRow">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1462,7950" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1925,8421" sap2010:WorkflowViewState.IdRef="Sequence_13">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="placa" />
                           <Variable x:TypeArguments="x:Double" Name="documento" />
@@ -462,74 +471,74 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="PLACA" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1420,185" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="PLACA" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[placa]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="DOCUMENTO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1420,185" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="DOCUMENTO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:Double">[documento]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="COMPARENDO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1420,185" sap2010:WorkflowViewState.IdRef="GetRowItem_3" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="COMPARENDO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_3" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[comparendo]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="SIMIT" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1420,185" sap2010:WorkflowViewState.IdRef="GetRowItem_4" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="SIMIT" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_4" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[simit]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="TIPO DE SERVICIO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1420,185" sap2010:WorkflowViewState.IdRef="GetRowItem_5" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="TIPO DE SERVICIO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_5" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[tipoServicio]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="CLASE DEL VEHICULO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1420,185" sap2010:WorkflowViewState.IdRef="GetRowItem_6" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="CLASE DEL VEHICULO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_6" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[claseDelVehiculo]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="CIUDAD" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1420,185" sap2010:WorkflowViewState.IdRef="GetRowItem_7" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="CIUDAD" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_7" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[ciudad]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="TIPO COMPARENDO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1420,185" sap2010:WorkflowViewState.IdRef="GetRowItem_8" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="TIPO COMPARENDO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_8" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[tipoComparendo]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="VALOR  DEL COMPARENDO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1420,185" sap2010:WorkflowViewState.IdRef="GetRowItem_9" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="VALOR  DEL COMPARENDO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_9" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[valorComparendo]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="FECHA DE INFRACCION" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1420,185" sap2010:WorkflowViewState.IdRef="GetRowItem_10" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="FECHA DE INFRACCION" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_10" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="s:DateTime">[fechaInfraccion]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="RoC" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1420,185" sap2010:WorkflowViewState.IdRef="GetRowItem_11" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="RoC" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_11" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[resolucionOcomparendo]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="N RESOLUCION" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1420,185" sap2010:WorkflowViewState.IdRef="GetRowItem_12" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="N RESOLUCION" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_12" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[nResolucion]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[cliente]" sap:VirtualizedContainerService.HintSize="1420,5158" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                        <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[cliente]" sap:VirtualizedContainerService.HintSize="1883,5593" sap2010:WorkflowViewState.IdRef="Switch`1_1">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence x:Key="BANCOLOMBIA" sap:VirtualizedContainerService.HintSize="1380,4974" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <Sequence x:Key="BANCOLOMBIA" sap:VirtualizedContainerService.HintSize="1843,5406" sap2010:WorkflowViewState.IdRef="Sequence_7">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:Boolean" Name="existePlaca" />
                             </Sequence.Variables>
@@ -538,16 +547,16 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[resolucionOcomparendo.Equals(&quot;C&quot;) Or resolucionOcomparendo.Equals(&quot;R&quot;)]" sap:VirtualizedContainerService.HintSize="1338,4882" sap2010:WorkflowViewState.IdRef="If_3">
+                            <If Condition="[resolucionOcomparendo.Equals(&quot;C&quot;) Or resolucionOcomparendo.Equals(&quot;R&quot;)]" sap:VirtualizedContainerService.HintSize="1801,5314" sap2010:WorkflowViewState.IdRef="If_3">
                               <If.Then>
-                                <Sequence sap:VirtualizedContainerService.HintSize="1302,4705" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                <Sequence sap:VirtualizedContainerService.HintSize="1765,5134" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1260,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1723,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -559,7 +568,7 @@
                                       </ui:CursorPosition>
                                     </ui:Click.CursorPosition>
                                     <ui:Click.Target>
-                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9f2b9588-ecc8-4ad4-95a2-aaa42e9ec6bc" InformativeScreenshot="00aeb01658333720b5ef0bfaabfd0d6e" Selector="&lt;html app='firefox.exe' title='SIGEST 17/06/2021' /&gt;&lt;webctrl aaname='BANCOLOMBIA - ' tag='SPAN' /&gt;">
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9f2b9588-ecc8-4ad4-95a2-aaa42e9ec6bc" InformativeScreenshot="e81d94dc871cf8bd30926a21a863d522" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl aaname='BANCOLOMBIA - ' tag='SPAN' /&gt;">
                                         <ui:Target.TimeoutMS>
                                           <InArgument x:TypeArguments="x:Int32" />
                                         </ui:Target.TimeoutMS>
@@ -569,7 +578,7 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1260,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1723,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -581,7 +590,7 @@
                                       </ui:CursorPosition>
                                     </ui:Click.CursorPosition>
                                     <ui:Click.Target>
-                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6f951fe3-9d32-4e39-bf47-47f852c37fd0" InformativeScreenshot="b41ce646e9a7a4d0dcaad55073b9e4b7" Selector="&lt;html app='firefox.exe' title='SIGEST 17/06/2021' /&gt;&lt;webctrl aaname='                                      Administración de  activos*' tag='A' /&gt;">
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6f951fe3-9d32-4e39-bf47-47f852c37fd0" InformativeScreenshot="bbfcdcf05b458c532f1740ff645d3f83" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl aaname='Administración de  activos leasing - TVH' tag='SPAN' /&gt;">
                                         <ui:Target.TimeoutMS>
                                           <InArgument x:TypeArguments="x:Int32" />
                                         </ui:Target.TimeoutMS>
@@ -591,7 +600,7 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1260,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="1723,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -603,7 +612,7 @@
                                       </ui:CursorPosition>
                                     </ui:Click.CursorPosition>
                                     <ui:Click.Target>
-                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="86d3e572-85ab-4c52-8c8b-c9be9772084c" InformativeScreenshot="7e7777c547175ae9ef0913d85c26c006" Selector="&lt;html app='firefox.exe' title='SIGEST 17/06/2021' /&gt;&lt;webctrl aaname='Comparendos' tag='SPAN' /&gt;">
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="86d3e572-85ab-4c52-8c8b-c9be9772084c" InformativeScreenshot="2ca8f5ffd90732e62d3db7664480c7f4" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl aaname='Comparendos' tag='SPAN' /&gt;">
                                         <ui:Target.TimeoutMS>
                                           <InArgument x:TypeArguments="x:Int32" />
                                         </ui:Target.TimeoutMS>
@@ -613,7 +622,7 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="1260,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="1723,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -625,7 +634,7 @@
                                       </ui:CursorPosition>
                                     </ui:Click.CursorPosition>
                                     <ui:Click.Target>
-                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f24fce6e-9cc7-4dfe-a0df-dfff17ceef15" InformativeScreenshot="c95b40cac004e47816697c14b666b41e" Selector="&lt;html app='firefox.exe' title='SIGEST 17/06/2021' /&gt;&lt;webctrl aaname='Registrar comparendo' tag='A' /&gt;">
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f24fce6e-9cc7-4dfe-a0df-dfff17ceef15" InformativeScreenshot="7f320fb41d2ad2550465b4717fff6958" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl aaname='Registrar comparendo' tag='A' /&gt;">
                                         <ui:Target.TimeoutMS>
                                           <InArgument x:TypeArguments="x:Int32" />
                                         </ui:Target.TimeoutMS>
@@ -635,10 +644,10 @@
                                       </ui:Target>
                                     </ui:Click.Target>
                                   </ui:Click>
-                                  <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1260,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
-                                  <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  filterInput'" sap:VirtualizedContainerService.HintSize="1260,134" sap2010:WorkflowViewState.IdRef="SetValue_4" Text="[placa]">
+                                  <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1723,22" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                  <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  filterInput'" sap:VirtualizedContainerService.HintSize="1723,134" sap2010:WorkflowViewState.IdRef="SetValue_4" Text="[placa]">
                                     <ui:SetValue.Target>
-                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3a5dfe5d-2647-4703-8046-1b66d7aa3e2d" InformativeScreenshot="a795e2edd7ced6aeb22a8d618530135c" Selector="&lt;html app='firefox.exe' title='SIGEST 17/06/2021' /&gt;&lt;webctrl tag='INPUT' type='search' /&gt;">
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3a5dfe5d-2647-4703-8046-1b66d7aa3e2d" InformativeScreenshot="a795e2edd7ced6aeb22a8d618530135c" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl tag='INPUT' type='search' /&gt;">
                                         <ui:Target.TimeoutMS>
                                           <InArgument x:TypeArguments="x:Int32" />
                                         </ui:Target.TimeoutMS>
@@ -648,12 +657,12 @@
                                       </ui:Target>
                                     </ui:SetValue.Target>
                                   </ui:SetValue>
-                                  <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[existePlaca]" sap:VirtualizedContainerService.HintSize="1260,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+                                  <ui:ImageFound DisplayName="Image Exists 'firefox.exe SIGEST'" Found="[existePlaca]" sap:VirtualizedContainerService.HintSize="1723,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
                                     <ui:ImageFound.Image>
-                                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAYAAAA3WXuFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFpSURBVFhH7Zg/S8NAGIf9gJm6Np+h2brVQbIUwUFEKEhnwT9DIWgHpYtC6KKCSLGkAZEqFoxDyx22/MxLaZvIa04SDafkwgPh7t78Hu4gcLcmpYRO6CskpEDlvALjyIBxnCNhHuVSfkyIOkutEsonZZinZm5QHuVSfkyITPOWWUC5lB8XCpePm5wXlF8IJVEIqfhfQtXrQ7T9Nk9vGxZToyK90I2LkezjgpMhervY8j2I6QPOriz+GwyphRpPAXz/qyALdZIBtRkmo31mDk8mIW9A7zaa903Yy7FPMoETGVOTUWgdrddJGLsIziZDZF4hexAREEFMpn5ZQ5WpTSKzUHyL5k280coc4G7mwWFqk/gBIWIlNZehPgde+OQmtPn4jJfhTuRfY6HW3VhtkdvBUHTRWI5/j9RCZmcP7kRAvI8xZhDTALd9m69NIL3QL1EIqSiEVBRCKv6AkG4HRe2O0tpdNuiCZkISHwW7TDN+RuOkAAAAAElFTkSuQmCC" />
+                                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFqSURBVFhH7ZdBS8MwGIb9gT3tuv2G9RfMg/TgechAEM8O5w5C6XaRQUEsFQ8TT84qCoqCoxNXW1d97Ve0rSzZpMUaJIEHQpKv78NXCGQlCAKIgpThIaaMH/ioH9Sh7ClQuiUS5VEu5ScytFDZr6BqVFHr1UqD8iiX8hMZMixb5AvKpfxUJmoZ62BZUL6UYSFlePwTGbOFzlUffSZtNAeMmiXklNmE9eJidMsSIdponRhwQh83102ozG/Mk09maMN9Mrghqk0iiMfb7BQ7jDMs8stM9HiunXWwbaV730VG0DN7yygks3pxDu89DS0iQhTrjKVnwsdwsyJ2Aw2TUbuAYjLRPNuNeIRO3JHd8SucS0btAgrLEInQpwit6ROUJHNs4t47wkbmLlEP17GW/BYNg2cX9jDd/wn5ZHoqtu4e4IceprPpPNH94j52oTFr+eSU+R2kDA8pw0PK8BBYRqRHnFDPW6Ee/n9PgA/66E/Hv6o7lQAAAABJRU5ErkJggg==" />
                                     </ui:ImageFound.Image>
                                     <ui:ImageFound.Target>
-                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="db633c49-26cc-4d54-8018-fb4677529846" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;">
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="db633c49-26cc-4d54-8018-fb4677529846" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;">
                                         <ui:Target.TimeoutMS>
                                           <InArgument x:TypeArguments="x:Int32" />
                                         </ui:Target.TimeoutMS>
@@ -663,9 +672,9 @@
                                       </ui:Target>
                                     </ui:ImageFound.Target>
                                   </ui:ImageFound>
-                                  <If Condition="[existePlaca]" sap:VirtualizedContainerService.HintSize="1260,3647" sap2010:WorkflowViewState.IdRef="If_2">
+                                  <If Condition="[existePlaca]" sap:VirtualizedContainerService.HintSize="1723,4076" sap2010:WorkflowViewState.IdRef="If_2">
                                     <If.Then>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="839,3016" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="839,3018" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -684,7 +693,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="31bf012c-7d9f-49a9-b5b4-169097eeda90" InformativeScreenshot="77d551f05a366d9c31307cef312e0593" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl parentid='my-table' tag='BUTTON' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="31bf012c-7d9f-49a9-b5b4-169097eeda90" InformativeScreenshot="cd0937b19838e0f349ac9fc0db2ec6d1" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl parentid='my-table' tag='BUTTON' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -697,7 +706,7 @@
                                         <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="797,22" sap2010:WorkflowViewState.IdRef="Delay_3" />
                                         <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="SetValue_5" Text="[comparendo]">
                                           <ui:SetValue.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="03fa2448-bce2-4102-8f04-f44ddcf97256" InformativeScreenshot="998cc7d577b31f46b376e86102f4d807" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="03fa2448-bce2-4102-8f04-f44ddcf97256" InformativeScreenshot="998cc7d577b31f46b376e86102f4d807" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -709,7 +718,7 @@
                                         </ui:SetValue>
                                         <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[fechaInfraccion.ToString.Replace(&quot;/&quot;,string.Empty)]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="40405110-49cc-4534-8b62-7f15c3575ead" InformativeScreenshot="957616e9651ff9ec7b81c488aa5007a0" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl tag='INPUT' type='date' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="40405110-49cc-4534-8b62-7f15c3575ead" InformativeScreenshot="291d3cc00609a13fefa9f7dd387e3dd6" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl tag='INPUT' type='date' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -721,7 +730,7 @@
                                         </ui:TypeInto>
                                         <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[tipoComparendo + &quot;[k(down)][k(enter)]&quot;]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b00b2ac7-0cda-4d65-aca5-4f01c4453aaa" InformativeScreenshot="36a69ce6404e003a458612d836030761" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b00b2ac7-0cda-4d65-aca5-4f01c4453aaa" InformativeScreenshot="d8903e5e23e1a6b828ca134bca4b4b4d" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -732,11 +741,11 @@
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
                                         <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="797,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
-                                        <If Condition="[resolucionOcomparendo.Equals(&quot;C&quot;)]" DisplayName="If hay resolucion" sap:VirtualizedContainerService.HintSize="797,650" sap2010:WorkflowViewState.IdRef="If_4">
+                                        <If Condition="[resolucionOcomparendo.Equals(&quot;C&quot;)]" DisplayName="If hay resolucion" sap:VirtualizedContainerService.HintSize="797,652" sap2010:WorkflowViewState.IdRef="If_4">
                                           <If.Then>
                                             <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'SELECT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" Text="[&quot;No&quot;+ &quot;[k(enter)]&quot;]">
                                               <ui:TypeInto.Target>
-                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74d50b86-cf55-4680-a672-0fe39e66ca76" InformativeScreenshot="4e5780a33ce808b2b2b2a644f1dd222c" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl parentid='app' tag='SELECT' /&gt;">
+                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74d50b86-cf55-4680-a672-0fe39e66ca76" InformativeScreenshot="174d28d089d9be2a1d9d6fa7d0d206b4" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl parentid='app' tag='SELECT' /&gt;">
                                                   <ui:Target.TimeoutMS>
                                                     <InArgument x:TypeArguments="x:Int32" />
                                                   </ui:Target.TimeoutMS>
@@ -762,7 +771,7 @@
                                                 </sap:WorkflowViewStateService.ViewState>
                                                 <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'SELECT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_21" Text="[&quot;Si&quot;+ &quot;[k(enter)]&quot;]">
                                                   <ui:TypeInto.Target>
-                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74d50b86-cf55-4680-a672-0fe39e66ca76" InformativeScreenshot="4e5780a33ce808b2b2b2a644f1dd222c" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl parentid='app' tag='SELECT' /&gt;">
+                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74d50b86-cf55-4680-a672-0fe39e66ca76" InformativeScreenshot="174d28d089d9be2a1d9d6fa7d0d206b4" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl parentid='app' tag='SELECT' /&gt;">
                                                       <ui:Target.TimeoutMS>
                                                         <InArgument x:TypeArguments="x:Int32" />
                                                       </ui:Target.TimeoutMS>
@@ -774,7 +783,7 @@
                                                 </ui:TypeInto>
                                                 <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_22" Text="[nResolucion]">
                                                   <ui:TypeInto.Target>
-                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="64f23634-ccad-44ce-bd42-e87481226e1c" InformativeScreenshot="600b697ef5821083b9cbd8890b5a135a" Selector="&lt;html app='firefox.exe' title='SIGEST 14/06/2021' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='2' tag='INPUT' type='text' /&gt;">
+                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="64f23634-ccad-44ce-bd42-e87481226e1c" InformativeScreenshot="5829b2c7dd7c867d3a0eaff1abe5d9e2" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='2' tag='INPUT' type='text' /&gt;">
                                                       <ui:Target.TimeoutMS>
                                                         <InArgument x:TypeArguments="x:Int32" />
                                                       </ui:Target.TimeoutMS>
@@ -790,7 +799,7 @@
                                         </If>
                                         <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_9" Text="[ciudad + &quot;[k(down)][k(down)][k(enter)]&quot; + &quot;[k(right)]&quot; + &quot;[k(right)]&quot;]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aee926e5-f8d4-41d8-b735-c71ae5aaaaba" InformativeScreenshot="0475bdf36f293587090acb017dc21e44" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='ciudad' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aee926e5-f8d4-41d8-b735-c71ae5aaaaba" InformativeScreenshot="8e9c6220cb50aeef9b271a31bb737c78" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='ciudad' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -802,7 +811,7 @@
                                         </ui:TypeInto>
                                         <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_8" Text="[ciudad+ &quot;[k(down)][k(enter)]&quot; + &quot;[k(right)]&quot; + &quot;[k(right)]&quot;]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d08bdd6a-2a6d-48e1-9568-36a96b5384f8" InformativeScreenshot="31b007e5680716b85b3628c13f60f2c0" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='ciudad' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d08bdd6a-2a6d-48e1-9568-36a96b5384f8" InformativeScreenshot="8e9c6220cb50aeef9b271a31bb737c78" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='ciudad' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -814,7 +823,7 @@
                                         </ui:TypeInto>
                                         <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" Text="800183670[k(enter)]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1c083383-d577-4f22-8e0b-98e223e88c45" InformativeScreenshot="b5ba847cb9bdbf45874223ffb6098c8f" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl idx='2' parentid='app' tag='SELECT' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1c083383-d577-4f22-8e0b-98e223e88c45" InformativeScreenshot="b5ba847cb9bdbf45874223ffb6098c8f" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl idx='2' parentid='app' tag='SELECT' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -826,7 +835,7 @@
                                         </ui:TypeInto>
                                         <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="SetValue_7" Text="[valorComparendo.ToString]">
                                           <ui:SetValue.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dfacd701-73f3-4a80-b37c-ae8a95f68792" InformativeScreenshot="d0b098ff0216f4ecf808481ec6b5182e" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='asignarcomparendo.valorapagar' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dfacd701-73f3-4a80-b37c-ae8a95f68792" InformativeScreenshot="77eec7337e642c3a6ddbea2d9c9c41e9" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='asignarcomparendo.valorapagar' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -838,7 +847,7 @@
                                         </ui:SetValue>
                                         <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[&quot;SIMIT&quot;+ &quot;[k(down)][k(enter)]&quot;]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="57cb9804-6756-4daa-a095-3617c216da52" InformativeScreenshot="af8fd0647500f55f2770ed34d110a5f6" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='3' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="57cb9804-6756-4daa-a095-3617c216da52" InformativeScreenshot="7022a80da2b64076f729e30f093bcc35" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='3' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -860,7 +869,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="789304d5-1a24-4706-8d03-37ca24aff031" InformativeScreenshot="1764624abc217e708d9877ad5604b17a" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl tag='INPUT' type='file' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="789304d5-1a24-4706-8d03-37ca24aff031" InformativeScreenshot="9b62abf6397586a65555b276a7a025b9" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl tag='INPUT' type='file' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -870,9 +879,9 @@
                                             </ui:Target>
                                           </ui:Click.Target>
                                         </ui:Click>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[&quot;C:\Users\jparra\OneDrive\RPA\COMPARENDOS\CAPTURAS\&quot;+comparendo.ToString+&quot; &quot;+&quot;.png&quot;]">
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[rutaImagen+comparendo.ToString+&quot; &quot;+&quot;.png&quot;]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2596bfeb-f226-4ad7-9aad-0dbf794f0810" InformativeScreenshot="91c95a14f6baf6ab678c494e9b2cac1b" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Carga de archivos' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2596bfeb-f226-4ad7-9aad-0dbf794f0810" InformativeScreenshot="2376e90d81c9833167af8a0fcb5c6c7d" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Carga de archivos' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -894,7 +903,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c10c9ca-823f-4474-97ee-e7c2eadbbe39" InformativeScreenshot="b6eb6561fba86943336d8f0cd8773c0e" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Carga de archivos' /&gt;&lt;wnd ctrlid='1' title='&amp;amp;Abrir' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3c10c9ca-823f-4474-97ee-e7c2eadbbe39" InformativeScreenshot="bad5d0ce5b455274701217118e0e5544" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Carga de archivos' /&gt;&lt;wnd ctrlid='1' title='&amp;amp;Abrir' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -916,7 +925,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5b8b23d0-ddf6-4fb5-834d-e1310b64f8cd" InformativeScreenshot="b758e662db0e6f61dce75b3dae95c7cd" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl tag='BUTTON' type='submit' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5b8b23d0-ddf6-4fb5-834d-e1310b64f8cd" InformativeScreenshot="803882abf670b042fa7177aa78556324" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl tag='BUTTON' type='submit' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -929,14 +938,14 @@
                                       </Sequence>
                                     </If.Then>
                                     <If.Else>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="376,3489" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="839,3916" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:Click.CursorPosition>
                                             <ui:CursorPosition Position="Center">
                                               <ui:CursorPosition.OffsetX>
@@ -948,7 +957,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="559f7a4e-ac8d-4dba-96a6-552da5978fcb" InformativeScreenshot="0fe93480dc2d4fd9b398df78d8ae199b" Selector="&lt;html app='firefox.exe' title='SIGEST 17/06/2021' /&gt;&lt;webctrl aaname='BANCOLOMBIA - ' tag='SPAN' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="559f7a4e-ac8d-4dba-96a6-552da5978fcb" InformativeScreenshot="e81d94dc871cf8bd30926a21a863d522" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl aaname='BANCOLOMBIA - ' tag='SPAN' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -958,7 +967,7 @@
                                             </ui:Target>
                                           </ui:Click.Target>
                                         </ui:Click>
-                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  #'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  #'" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:Click.CursorPosition>
                                             <ui:CursorPosition Position="Center">
                                               <ui:CursorPosition.OffsetX>
@@ -970,7 +979,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2182269c-c67e-4ea6-a9d3-ddf907e0fa8b" InformativeScreenshot="9a9aa3159b8adbcfe25a0360c1851dc5" Selector="&lt;html app='firefox.exe' title='SIGEST 17/06/2021' /&gt;&lt;webctrl aaname='Administración de  activos leasing - TVH' tag='SPAN' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2182269c-c67e-4ea6-a9d3-ddf907e0fa8b" InformativeScreenshot="611941d91d8585636b8b14b01f536a73" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl aaname='Administración de  activos leasing - TVH' tag='SPAN' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -980,7 +989,7 @@
                                             </ui:Target>
                                           </ui:Click.Target>
                                         </ui:Click>
-                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:Click.CursorPosition>
                                             <ui:CursorPosition Position="Center">
                                               <ui:CursorPosition.OffsetX>
@@ -992,7 +1001,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ac24201b-2f85-48ab-afcd-442a6208af39" InformativeScreenshot="63788e3452b3d342a4fdc9bc52481d36" Selector="&lt;html app='firefox.exe' title='SIGEST 17/06/2021' /&gt;&lt;webctrl aaname='Comparendos' tag='SPAN' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ac24201b-2f85-48ab-afcd-442a6208af39" InformativeScreenshot="5ccd9d501ed9624b4753a577a63ea6fb" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl aaname='Comparendos' tag='SPAN' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1002,7 +1011,7 @@
                                             </ui:Target>
                                           </ui:Click.Target>
                                         </ui:Click>
-                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:Click.CursorPosition>
                                             <ui:CursorPosition Position="Center">
                                               <ui:CursorPosition.OffsetX>
@@ -1014,7 +1023,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8103f0ad-525a-46ae-a7a1-c83e9044fee6" InformativeScreenshot="c6a6daaf4fc6af16b283962502a7a4b8" Selector="&lt;html app='firefox.exe' title='SIGEST 17/06/2021' /&gt;&lt;webctrl aaname='Registrar comparendo  no asociado' tag='A' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8103f0ad-525a-46ae-a7a1-c83e9044fee6" InformativeScreenshot="13a786b87bd69f56018ae633da10acba" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl aaname='Registrar comparendo  no asociado' tag='A' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1024,8 +1033,8 @@
                                             </ui:Target>
                                           </ui:Click.Target>
                                         </ui:Click>
-                                        <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_5" />
-                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_15" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="797,22" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="Click_15" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:Click.CursorPosition>
                                             <ui:CursorPosition Position="Center">
                                               <ui:CursorPosition.OffsetX>
@@ -1037,7 +1046,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4cc21e5c-6b04-461d-bc13-f43eeb46e96e" InformativeScreenshot="522c4c16de23bbb4144c63240eb76388" Selector="&lt;html app='firefox.exe' title='SIGEST 17/06/2021' /&gt;&lt;webctrl aaname='         Crear Nuevo Comparendo     ' tag='BUTTON' type='button' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4cc21e5c-6b04-461d-bc13-f43eeb46e96e" InformativeScreenshot="0378d9e2b84541371ec857e4f9692720" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl aaname='         Crear Nuevo Comparendo     ' tag='BUTTON' type='button' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1047,9 +1056,9 @@
                                             </ui:Target>
                                           </ui:Click.Target>
                                         </ui:Click>
-                                        <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SetValue_8" Text="[placa]">
+                                        <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="SetValue_8" Text="[placa]">
                                           <ui:SetValue.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e09837bc-740b-40bf-9288-bc23a0a599ac" InformativeScreenshot="f0470014828b3a7632a082b2f9194e19" Selector="&lt;html app='firefox.exe' title='SIGEST 17/06/2021' /&gt;&lt;webctrl name='placa' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e09837bc-740b-40bf-9288-bc23a0a599ac" InformativeScreenshot="f0470014828b3a7632a082b2f9194e19" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='placa' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1059,9 +1068,9 @@
                                             </ui:Target>
                                           </ui:SetValue.Target>
                                         </ui:SetValue>
-                                        <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SetValue_9" Text="[comparendo]">
+                                        <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="SetValue_9" Text="[comparendo]">
                                           <ui:SetValue.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d8813770-1956-472b-ab06-2fda5408d7f3" InformativeScreenshot="24897b3c550ab169f3d4a2ec220a55ca" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='Id Comparendo' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d8813770-1956-472b-ab06-2fda5408d7f3" InformativeScreenshot="33595bdaa6a5fd833c849387fdd62479" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='Id Comparendo' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1071,9 +1080,9 @@
                                             </ui:Target>
                                           </ui:SetValue.Target>
                                         </ui:SetValue>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_10" Text="[fechaInfraccion.ToString.Replace(&quot;/&quot;,&quot;-&quot;)]">
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_10" Text="[fechaInfraccion.ToString.Replace(&quot;/&quot;,&quot;-&quot;)]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6673294a-51c2-48a9-ab76-7ab49260ae1d" InformativeScreenshot="2b7408631ecb0f97083baec72677d1c7" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='fecha infraccion' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6673294a-51c2-48a9-ab76-7ab49260ae1d" InformativeScreenshot="2b7408631ecb0f97083baec72677d1c7" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='fecha infraccion' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1083,9 +1092,9 @@
                                             </ui:Target>
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_11" Text="[tipoComparendo+ &quot;[k(down)]&quot;+ &quot;[k(enter)]&quot;]">
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_11" Text="[tipoComparendo+ &quot;[k(down)]&quot;+ &quot;[k(enter)]&quot;]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="242ade89-bd60-422d-b42d-f9bdfe15a9d0" InformativeScreenshot="70dc0947f058b1028c14833d8726ce98" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='Tipo Comparendo' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="242ade89-bd60-422d-b42d-f9bdfe15a9d0" InformativeScreenshot="41e1134cc4c58a0cd9e0306fb7b3a219" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='Tipo Comparendo' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1095,17 +1104,17 @@
                                             </ui:Target>
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
-                                        <If Condition="[resolucionOcomparendo.Equals(&quot;C&quot;)]" DisplayName="If hay resolucion" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_5">
+                                        <If Condition="[resolucionOcomparendo.Equals(&quot;C&quot;)]" DisplayName="If hay resolucion" sap:VirtualizedContainerService.HintSize="797,652" sap2010:WorkflowViewState.IdRef="If_5">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                           <If.Then>
                                             <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'SELECT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_23" Text="[&quot;No&quot;+ &quot;[k(enter)]&quot;]">
                                               <ui:TypeInto.Target>
-                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74d50b86-cf55-4680-a672-0fe39e66ca76" InformativeScreenshot="4e5780a33ce808b2b2b2a644f1dd222c" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl parentid='app' tag='SELECT' /&gt;">
+                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74d50b86-cf55-4680-a672-0fe39e66ca76" InformativeScreenshot="5d046823c72970d10f6e65aa39200514" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='Aplica Resolucion' tag='INPUT' type='text' /&gt;">
                                                   <ui:Target.TimeoutMS>
                                                     <InArgument x:TypeArguments="x:Int32" />
                                                   </ui:Target.TimeoutMS>
@@ -1131,7 +1140,7 @@
                                                 </sap:WorkflowViewStateService.ViewState>
                                                 <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'SELECT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_24" Text="[&quot;Si&quot;+ &quot;[k(enter)]&quot;]">
                                                   <ui:TypeInto.Target>
-                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74d50b86-cf55-4680-a672-0fe39e66ca76" InformativeScreenshot="4e5780a33ce808b2b2b2a644f1dd222c" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl parentid='app' tag='SELECT' /&gt;">
+                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="74d50b86-cf55-4680-a672-0fe39e66ca76" InformativeScreenshot="5d046823c72970d10f6e65aa39200514" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='Aplica Resolucion' tag='INPUT' type='text' /&gt;">
                                                       <ui:Target.TimeoutMS>
                                                         <InArgument x:TypeArguments="x:Int32" />
                                                       </ui:Target.TimeoutMS>
@@ -1143,7 +1152,7 @@
                                                 </ui:TypeInto>
                                                 <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_25" Text="[nResolucion]">
                                                   <ui:TypeInto.Target>
-                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="64f23634-ccad-44ce-bd42-e87481226e1c" InformativeScreenshot="600b697ef5821083b9cbd8890b5a135a" Selector="&lt;html app='firefox.exe' title='SIGEST 14/06/2021' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' idx='2' tag='INPUT' type='text' /&gt;">
+                                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="64f23634-ccad-44ce-bd42-e87481226e1c" InformativeScreenshot="c06e50de1442c20c4ebd2dcfaaedbe2e" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='Id Resolucion' tag='INPUT' type='text' /&gt;">
                                                       <ui:Target.TimeoutMS>
                                                         <InArgument x:TypeArguments="x:Int32" />
                                                       </ui:Target.TimeoutMS>
@@ -1157,9 +1166,9 @@
                                             </Sequence>
                                           </If.Else>
                                         </If>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_12" Text="[ciudad+&quot;[k(down)]&quot;+&quot;[k(enter)]&quot;]">
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_12" Text="[ciudad+&quot;[k(down)]&quot;+&quot;[k(enter)]&quot;]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="639020d2-96b0-4ecb-9bba-f8d1498829aa" InformativeScreenshot="064befcd65922a1208c404d61bedb583" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='ciudad' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="639020d2-96b0-4ecb-9bba-f8d1498829aa" InformativeScreenshot="8c4f61e06244e245b250e80c921df70b" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='ciudad' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1169,9 +1178,9 @@
                                             </ui:Target>
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_13" Text="[ciudad+&quot;[k(down)]&quot;+&quot;[k(enter)]&quot;]">
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_13" Text="[ciudad+&quot;[k(down)]&quot;+&quot;[k(enter)]&quot;]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e260c219-0a41-4ab8-b80e-8ff2f7ad83f0" InformativeScreenshot="064befcd65922a1208c404d61bedb583" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='ciudad' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e260c219-0a41-4ab8-b80e-8ff2f7ad83f0" InformativeScreenshot="8a79e4f433b3e59a29176c878888c0b3" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='ciudad' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1181,9 +1190,9 @@
                                             </ui:Target>
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_14" Text="[valorComparendo.ToString]">
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_14" Text="[valorComparendo.ToString]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="222eddfd-6d41-476a-9b3a-fceca96f2db2" InformativeScreenshot="b954bdac05d0d0e44a44dcc630951db4" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='valor a pagar' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="222eddfd-6d41-476a-9b3a-fceca96f2db2" InformativeScreenshot="b878089bde8e571e0335b5ddfefe6847" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='valor a pagar' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1193,9 +1202,9 @@
                                             </ui:Target>
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_15" Text="[&quot;NIT&quot;+ &quot;[k(down)]&quot;+ &quot;[k(enter)]&quot;]">
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_15" Text="[&quot;NIT&quot;+ &quot;[k(down)]&quot;+ &quot;[k(enter)]&quot;]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="14e98a86-471a-4b8a-927e-06ea9c09cb30" InformativeScreenshot="64f5a589cea4d5d12d40f1848d6dd864" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='tipo_documento' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="14e98a86-471a-4b8a-927e-06ea9c09cb30" InformativeScreenshot="40bfb59df522e3ebb945edef54a3ee2c" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='tipo_documento' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1205,9 +1214,9 @@
                                             </ui:Target>
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_16" Text="[documento.ToString]">
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_16" Text="[documento.ToString]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="097d9532-9891-4069-baf9-d31c4ea2b843" InformativeScreenshot="7851c8b3cddfc754e7fd760a1f3b9d6b" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='Numero Documento' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="097d9532-9891-4069-baf9-d31c4ea2b843" InformativeScreenshot="44dc6ae345ad55d6ecd8a03268590420" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='Numero Documento' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1217,9 +1226,9 @@
                                             </ui:Target>
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_17" Text="[documento.ToString]">
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_17" Text="[documento.ToString]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="35199737-6301-42d0-89ca-33fa2e7bd0c0" InformativeScreenshot="d799aeb7e96c1a298918fabcc12a2fa5" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='Confirmacion Numero Documento' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="35199737-6301-42d0-89ca-33fa2e7bd0c0" InformativeScreenshot="7d942707e61d910066b3468d4f7ceaea" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='Confirmacion Numero Documento' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1229,9 +1238,9 @@
                                             </ui:Target>
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_18" Text="[&quot;No&quot;+ &quot;[k(down)]&quot;+ &quot;[k(enter)]&quot;]">
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_19" Text="[&quot;SIMIT&quot;+ &quot;[k(down)]&quot;+ &quot;[k(enter)]&quot;]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f404674d-326e-43bb-9c48-97933f6166b1" InformativeScreenshot="3c867e6f4072cee2c03eb37dc38b6102" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='Aplica Resolucion' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="19b2525e-ac81-41e7-9ed5-de11294e5310" InformativeScreenshot="6764f3126dc2c212c963182999da436c" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl name='Fuente Comparendo' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1241,19 +1250,7 @@
                                             </ui:Target>
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_19" Text="[&quot;SIMIT&quot;+ &quot;[k(down)]&quot;+ &quot;[k(enter)]&quot;]">
-                                          <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="19b2525e-ac81-41e7-9ed5-de11294e5310" InformativeScreenshot="bded59dcb536989d1750129c554cff3c" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl name='Fuente Comparendo' tag='INPUT' type='text' /&gt;">
-                                              <ui:Target.TimeoutMS>
-                                                <InArgument x:TypeArguments="x:Int32" />
-                                              </ui:Target.TimeoutMS>
-                                              <ui:Target.WaitForReady>
-                                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                                              </ui:Target.WaitForReady>
-                                            </ui:Target>
-                                          </ui:TypeInto.Target>
-                                        </ui:TypeInto>
-                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_16" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A'" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="Click_16" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:Click.CursorPosition>
                                             <ui:CursorPosition Position="Center">
                                               <ui:CursorPosition.OffsetX>
@@ -1265,7 +1262,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6a1cfe8a-54ff-4a64-9e2c-8c4d851d1caa" InformativeScreenshot="70c0a8d89fc52f073871e0c9f968c8f7" Selector="&lt;html app='firefox.exe' title='SIGEST 10/06/2021' /&gt;&lt;webctrl parentid='comparendoModal' tag='A' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6a1cfe8a-54ff-4a64-9e2c-8c4d851d1caa" InformativeScreenshot="70c0a8d89fc52f073871e0c9f968c8f7" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl parentid='comparendoModal' tag='A' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1275,9 +1272,9 @@
                                             </ui:Target>
                                           </ui:Click.Target>
                                         </ui:Click>
-                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_20" Text="[&quot;C:\Users\jparra\OneDrive\RPA\COMPARENDOS\CAPTURAS\&quot;+comparendo.ToString+&quot; &quot;+&quot;.png&quot;]">
+                                        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_20" Text="[rutaImagen+comparendo.ToString+&quot; &quot;+&quot;.png&quot;]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7fc5dbf3-e181-4b0a-9db1-7b0e96296f38" InformativeScreenshot="5702356025481862b67f0b6531602712" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Carga de archivos' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7fc5dbf3-e181-4b0a-9db1-7b0e96296f38" InformativeScreenshot="2376e90d81c9833167af8a0fcb5c6c7d" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Carga de archivos' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -1287,7 +1284,7 @@
                                             </ui:Target>
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
-                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_17" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="Click_17" KeyModifiers="None" MouseButton="BTN_LEFT">
                                           <ui:Click.CursorPosition>
                                             <ui:CursorPosition Position="Center">
                                               <ui:CursorPosition.OffsetX>
@@ -1299,7 +1296,7 @@
                                             </ui:CursorPosition>
                                           </ui:Click.CursorPosition>
                                           <ui:Click.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cda6f21e-ec41-427e-8f24-75e77ba5d98d" InformativeScreenshot="e96d186de891e892fbcd1eb2344ffbc3" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Carga de archivos' /&gt;&lt;wnd ctrlid='1' title='&amp;amp;Abrir' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cda6f21e-ec41-427e-8f24-75e77ba5d98d" InformativeScreenshot="0945a9d5ec13b5bc4fc458372f423ba7" Selector="&lt;wnd app='firefox.exe' cls='#32770' title='Carga de archivos' /&gt;&lt;wnd ctrlid='1' title='&amp;amp;Abrir' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
