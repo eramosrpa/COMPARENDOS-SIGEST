@@ -419,7 +419,7 @@
                   <av:Size x:Key="ShapeSize">200,68</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Sequence Inserccion Comparendo" sap:VirtualizedContainerService.HintSize="2001,8834" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence DisplayName="Sequence Inserccion Comparendo" sap:VirtualizedContainerService.HintSize="2001,8787" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="cliente" />
                   <Variable x:TypeArguments="x:String" Name="rutaImagen" />
@@ -445,13 +445,13 @@
                     <InArgument x:TypeArguments="x:String">C:\Users\jparra\OneDrive\RPA\COMPARENDOS\CAPTURAS\</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtcomparendos]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1959,8542" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtcomparendos]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1959,8495" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                   <ui:ForEachRow.Body>
                     <ActivityAction x:TypeArguments="sd:DataRow">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1925,8421" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1925,8375" sap2010:WorkflowViewState.IdRef="Sequence_13">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="placa" />
                           <Variable x:TypeArguments="x:Double" Name="documento" />
@@ -462,83 +462,83 @@
                           <Variable x:TypeArguments="x:String" Name="ciudad" />
                           <Variable x:TypeArguments="x:String" Name="tipoComparendo" />
                           <Variable x:TypeArguments="x:String" Name="valorComparendo" />
-                          <Variable x:TypeArguments="s:DateTime" Name="fechaInfraccion" />
                           <Variable x:TypeArguments="x:String" Name="resolucionOcomparendo" />
                           <Variable x:TypeArguments="x:String" Name="nResolucion" />
+                          <Variable x:TypeArguments="x:String" Name="fechaInfraccion" />
                         </Sequence.Variables>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="PLACA" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="PLACA" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,185" sap2010:WorkflowViewState.IdRef="GetRowItem_1" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[placa]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="DOCUMENTO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="DOCUMENTO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,185" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:Double">[documento]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="COMPARENDO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_3" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="COMPARENDO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,185" sap2010:WorkflowViewState.IdRef="GetRowItem_3" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[comparendo]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="SIMIT" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_4" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="SIMIT" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,185" sap2010:WorkflowViewState.IdRef="GetRowItem_4" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[simit]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="TIPO DE SERVICIO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_5" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="TIPO DE SERVICIO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,185" sap2010:WorkflowViewState.IdRef="GetRowItem_5" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[tipoServicio]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="CLASE DEL VEHICULO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_6" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="CLASE DEL VEHICULO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,185" sap2010:WorkflowViewState.IdRef="GetRowItem_6" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[claseDelVehiculo]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="CIUDAD" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_7" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="CIUDAD" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,185" sap2010:WorkflowViewState.IdRef="GetRowItem_7" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[ciudad]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="TIPO COMPARENDO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_8" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="TIPO COMPARENDO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,185" sap2010:WorkflowViewState.IdRef="GetRowItem_8" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[tipoComparendo]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="VALOR  DEL COMPARENDO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_9" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="VALOR  DEL COMPARENDO" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,185" sap2010:WorkflowViewState.IdRef="GetRowItem_9" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[valorComparendo]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="FECHA DE INFRACCION" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_10" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="FECHA DE INFRACCION" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,185" sap2010:WorkflowViewState.IdRef="GetRowItem_10" Row="[row]">
                           <ui:GetRowItem.Value>
-                            <OutArgument x:TypeArguments="s:DateTime">[fechaInfraccion]</OutArgument>
+                            <OutArgument x:TypeArguments="x:String">[fechaInfraccion]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="RoC" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_11" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="RoC" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,185" sap2010:WorkflowViewState.IdRef="GetRowItem_11" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[resolucionOcomparendo]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="N RESOLUCION" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,188" sap2010:WorkflowViewState.IdRef="GetRowItem_12" Row="[row]">
+                        <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="N RESOLUCION" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="1883,185" sap2010:WorkflowViewState.IdRef="GetRowItem_12" Row="[row]">
                           <ui:GetRowItem.Value>
                             <OutArgument x:TypeArguments="x:String">[nResolucion]</OutArgument>
                           </ui:GetRowItem.Value>
                         </ui:GetRowItem>
-                        <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[cliente]" sap:VirtualizedContainerService.HintSize="1883,5593" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                        <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[cliente]" sap:VirtualizedContainerService.HintSize="1883,5583" sap2010:WorkflowViewState.IdRef="Switch`1_1">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence x:Key="BANCOLOMBIA" sap:VirtualizedContainerService.HintSize="1843,5406" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <Sequence x:Key="BANCOLOMBIA" sap:VirtualizedContainerService.HintSize="1843,5399" sap2010:WorkflowViewState.IdRef="Sequence_7">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:Boolean" Name="existePlaca" />
                             </Sequence.Variables>
@@ -547,9 +547,9 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[resolucionOcomparendo.Equals(&quot;C&quot;) Or resolucionOcomparendo.Equals(&quot;R&quot;)]" sap:VirtualizedContainerService.HintSize="1801,5314" sap2010:WorkflowViewState.IdRef="If_3">
+                            <If Condition="[resolucionOcomparendo.Equals(&quot;C&quot;) Or resolucionOcomparendo.Equals(&quot;R&quot;)]" sap:VirtualizedContainerService.HintSize="1801,5307" sap2010:WorkflowViewState.IdRef="If_3">
                               <If.Then>
-                                <Sequence sap:VirtualizedContainerService.HintSize="1765,5134" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                <Sequence sap:VirtualizedContainerService.HintSize="1765,5130" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -672,9 +672,9 @@
                                       </ui:Target>
                                     </ui:ImageFound.Target>
                                   </ui:ImageFound>
-                                  <If Condition="[existePlaca]" sap:VirtualizedContainerService.HintSize="1723,4076" sap2010:WorkflowViewState.IdRef="If_2">
+                                  <If Condition="[existePlaca]" sap:VirtualizedContainerService.HintSize="1723,4072" sap2010:WorkflowViewState.IdRef="If_2">
                                     <If.Then>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="839,3018" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="839,3016" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -730,7 +730,7 @@
                                         </ui:TypeInto>
                                         <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT'" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[tipoComparendo + &quot;[k(down)][k(enter)]&quot;]">
                                           <ui:TypeInto.Target>
-                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b00b2ac7-0cda-4d65-aca5-4f01c4453aaa" InformativeScreenshot="d8903e5e23e1a6b828ca134bca4b4b4d" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;">
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b00b2ac7-0cda-4d65-aca5-4f01c4453aaa" InformativeScreenshot="35a3f131b983326b25484be113bc093c" Selector="&lt;html app='firefox.exe' title='SIGEST 08/07/2021' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;">
                                               <ui:Target.TimeoutMS>
                                                 <InArgument x:TypeArguments="x:Int32" />
                                               </ui:Target.TimeoutMS>
@@ -740,8 +740,8 @@
                                             </ui:Target>
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
-                                        <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="797,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
-                                        <If Condition="[resolucionOcomparendo.Equals(&quot;C&quot;)]" DisplayName="If hay resolucion" sap:VirtualizedContainerService.HintSize="797,652" sap2010:WorkflowViewState.IdRef="If_4">
+                                        <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="797,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                                        <If Condition="[resolucionOcomparendo.Equals(&quot;C&quot;)]" DisplayName="If hay resolucion" sap:VirtualizedContainerService.HintSize="797,650" sap2010:WorkflowViewState.IdRef="If_4">
                                           <If.Then>
                                             <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'SELECT'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" Text="[&quot;No&quot;+ &quot;[k(enter)]&quot;]">
                                               <ui:TypeInto.Target>
@@ -938,7 +938,7 @@
                                       </Sequence>
                                     </If.Then>
                                     <If.Else>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="839,3916" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="839,3914" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1104,7 +1104,7 @@
                                             </ui:Target>
                                           </ui:TypeInto.Target>
                                         </ui:TypeInto>
-                                        <If Condition="[resolucionOcomparendo.Equals(&quot;C&quot;)]" DisplayName="If hay resolucion" sap:VirtualizedContainerService.HintSize="797,652" sap2010:WorkflowViewState.IdRef="If_5">
+                                        <If Condition="[resolucionOcomparendo.Equals(&quot;C&quot;)]" DisplayName="If hay resolucion" sap:VirtualizedContainerService.HintSize="797,650" sap2010:WorkflowViewState.IdRef="If_5">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
